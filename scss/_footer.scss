@@ -1,0 +1,37 @@
+.container-footer{
+    width: 100%;
+    background-color: white;
+    border-top: #0F8436 solid 2px;
+    text-align: center;
+   .container-logo{
+       width: 100%;
+        .logo-footer{    
+            // width: 85px;
+            margin: 10px 0;
+        }
+    }
+    .footer-bottom{
+        background-color: #0F8436;
+        padding: 5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container-text-footer{
+            width: 55%;
+            text-align: right;
+            .footer-text{
+                color: white;
+                font-size: 11px;
+                margin: 0;
+            }
+        }
+        .container-footer_logo{
+            width: 40%;
+            text-align: right;
+            .logo-eeuu{
+                margin-right: 20px;
+            }
+        }
+        
+    }   
+}

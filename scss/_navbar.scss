@@ -1,0 +1,72 @@
+nav{
+    background-color: #0F8436;
+    border-bottom: 2px solid $vitamin-2;
+    box-shadow: none;
+    .brand-logo{
+        background-color: white;
+        padding: 0 10px;
+        margin-left: 30px;
+        border-radius: 0 0 10px 10px;
+        -webkit-border-radius: 0 0 10px 10px;
+        -moz-border-radius: 0 0 10px 10px;
+        -ms-border-radius: 0 0 10px 10px;
+        -o-border-radius: 0 0 10px 10px;
+        z-index: 20;
+        -webkit-box-shadow: 0px 13px 33px -23px rgba(0,0,0,0.48);
+        -moz-box-shadow: 0px 13px 33px -23px rgba(0,0,0,0.48);
+        box-shadow: 0px 13px 33px -23px rgba(0,0,0,0.48);
+        @media (min-width: 320px) and (max-width: 992px) {
+            margin-left: 0;
+        }
+        .logo-vitamin{
+            width: 83px;
+            margin-top: 10px;
+        }
+    }
+    .sidenav-trigger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon-menu{
+            background-color: $vitamin-2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            font-weight: 900;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+        }
+    }
+    ul{
+        li{
+            a{
+                color: white;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 500;
+                &:hover{
+                    background-color: $vitamin-2;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.sidenav{
+    li{
+        a{
+            color: $vitamin-2;
+            text-transform: uppercase;
+            font-size: 14px;
+            &:hover{
+                background-color: $vitamin-2;
+                color: white;
+            }
+        }
+    }
+}

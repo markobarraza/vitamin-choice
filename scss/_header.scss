@@ -1,0 +1,93 @@
+.header{
+    // background-image: url(../img/header-img.jpg);
+    background-position: right center;
+    height: 315px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @media (min-width: 320px) and (max-width: 600px){
+        background-position-x: 73%;
+    }
+    .swiper-header{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        .swiper-wrapper{
+            .swiper-slide{
+                background-position: center;
+                background-size: cover;
+                @media (min-width: 320px) and (max-width: 992px){
+                    // background-position-x: 70%;
+                }
+            }
+        }
+    }
+    .header-gradient{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: inherit;
+        background: rgb(0,0,0);
+        background: -moz-linear-gradient(0deg, rgba(0,0,0,0.309943960494354) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.309943960494354) 0%, rgba(0,0,0,0) 100%);
+        background: linear-gradient(0deg, rgba(0,0,0,0.309943960494354) 0%, rgba(0,0,0,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1); 
+    }
+    .container-header{
+        width: 90%;
+        // margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+        
+        .header-img{
+            margin-top: 20px;
+            width: 420px;
+            @media (min-width: 320px) and (max-width: 600px){
+                display: none;
+            }
+            
+        }
+        .container-header_text{
+            width: 300px;
+            text-align: left;
+            margin-top: 120px;
+            margin-bottom: 30px;
+            @media (min-width: 320px) and (max-width: 600px){
+                text-align: center;
+                width: 100%;
+                margin-top: 50px;
+            }
+            .header-logo_img{
+                margin: 0;
+                @media (min-width: 320px) and (max-width: 600px){
+                    display: none;
+                }
+            }
+            .header-text{
+                padding-right: 20px;
+                font-size: 25px;
+                color: white;
+                line-height: 26px;
+                margin: 5px 0 0 0;
+                font-weight: 600;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.43);
+                @media (min-width: 320px) and (max-width: 600px){
+                    
+                    
+                }
+            }
+            .text_important{
+                margin: 0;
+                font-weight: 600;
+                padding-right: 20px;
+                color: white;
+                font-size: 55px;
+                line-height: 55px;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.43);
+            }
+        }
+    }
+}

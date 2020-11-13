@@ -1,0 +1,183 @@
+.destacados{
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: 20px 0 40px 0;
+    .container-destacados{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        @media (min-width: 320px) and (max-width: 992px){
+            width: 100%;
+        }
+        h2{
+            font-size: 25px;
+            color: $titulos;
+            font-weight: 500;
+            text-transform: uppercase;   
+        }
+        .container-productos_destacados{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            @media (min-width: 320px) and (max-width: 992px){
+                flex-wrap: wrap;
+            }
+            .container_producto{
+                background-color: white;
+                position: relative;
+                margin-top: 30px;
+                overflow: hidden;
+                width: 250px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                -webkit-box-shadow: 3px 7px 24px -14px rgba(0,0,0,0.75);
+                -moz-box-shadow: 3px 7px 24px -14px rgba(0,0,0,0.75);
+                box-shadow: 3px 7px 24px -14px rgba(0,0,0,0.75);
+                // transicion
+                -webkit-transition: .3s linear;
+                transition: .3s linear;
+                @media (min-width: 400px) and (max-width: 599px){
+                    width: 180px;
+                }
+                @media (min-width: 320px) and (max-width: 399px){
+                    width: 250px;
+                }
+                &:hover{
+                    margin-top: 10px;
+                    .btn-prevencion{
+                        background-color: $prevencion;
+                        color: white;
+                        font-weight: 600;
+                    }
+                    .btn-digestivo{
+                        background-color: $digestivo;
+                        color: white;
+                        font-weight: 600;
+                    }
+                    .btn-cardio{
+                        background-color: $cardio;
+                        color: white;
+                        font-weight: 600;
+                    }
+                    .btn-huesos{
+                        background-color: $huesos;
+                        color: white;
+                        font-weight: 600;
+                    }
+                    .btn-femenina{
+                        background-color: $femenina;
+                        color: white;
+                        font-weight: 600;
+                    }
+                    .btn-masculina{
+                        background-color: $masculina;
+                        color: white;
+                        font-weight: 600;
+                    }
+                    .btn-memoria{
+                        background-color: $memoria;
+                        color: white;
+                        font-weight: 600;
+                    }
+                    .btn-energia{
+                        background-color: $energia;
+                        color: white;
+                        font-weight: 600;
+                    }
+                    .btn-dieta{
+                        background-color: $dieta;
+                        color: white;
+                        font-weight: 600;
+                    }
+                    .btn-antioxidantes{
+                        background-color: $antioxidantes;
+                        color: white;
+                        font-weight: 600;
+                    }
+                    .btn-relajacion{
+                        background-color: $relajacion;
+                        color: white;
+                        font-weight: 600;
+                    }
+                    
+                }
+                .box-categoria{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    color: white;
+                    right: 20px;
+                    .icon-categoria{
+                        font-size: 27px;
+                    }
+                }
+                .producto-img{
+                    width: 100px;
+                    margin: 20px 0;
+                }
+                .container-info_producto{
+                    text-align: center;
+                    margin-bottom: 10px;
+                    h3{
+                        color: $titulos;
+                        font-size: 16px;
+                        margin: 0;
+                    }
+                    p{
+                        font-size: 12px;
+                        height: 36px;
+                        margin: 0;
+                    }
+                }
+                .container_btn{
+                    border-top: 1px #E3E3E3 solid;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center; 
+                    color: $titulos;   
+                    -webkit-transition: background-color 1s linear;
+                    transition: background-color 1s linear;   
+                                 
+                    h4{
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        margin: 0 20px;
+                    }
+                    .arrow{
+                        font-size: 25px;
+                        padding: 15px 20px;
+                        border-left: 1px #E3E3E3 solid;;
+                        
+                    }
+                }
+            }
+        }
+        .btn-vermas{
+            h2{
+                font-size: 20px;
+                color: #0F8436;
+                border: solid 1px #0F8436;
+                display: inline-block;
+                padding: 20px 50px;
+                font-weight: 400;
+                margin-top: 70px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                &:hover{
+                    color: white;
+                    background-color:  #0F8436;
+                }
+            }
+        }
+    }
+}
